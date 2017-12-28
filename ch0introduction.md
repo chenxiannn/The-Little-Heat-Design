@@ -27,8 +27,6 @@
 
 两者混合优化，才会得到最高性价比的散热系统设计。
 
-
-
 ### **2.风路设计基础**
 
 不要一上来觉得很难，其实风路设计和电路设计有很多的相似之处，你可以看下面这张风道的等效电路图：
@@ -65,7 +63,7 @@
 
 ![](/assets/Cover_Heat_S0_E3.png)
 
-图4 热路Foster等效电路
+图4 热路Foster等效电路
 
 Cauer等效回路是基于实际物理特性实现对IGBT温度的瞬态效应的描述，具备真实的物理意义。而一般的IGBT数据手册中采用基于Foster等效回路进行描述，这种等效回路是采用指数曲线数值拟合的方式实现温升阻抗Zth\(j-c\)的描述，并不具有物理含义。
 
@@ -73,7 +71,7 @@ ABB或与英飞凌的技术文档里中IGBT Zth\(j-c\)的测试方法，均是�
 
 ![](/assets/Cover_Heat_S0_E4.png)
 
-图5  Zth\(j-c\)的测试
+图5  Zth\(j-c\)的测试
 
 Zth\(j-c\)的计算公式为：
 
@@ -87,7 +85,7 @@ Zth\(j-c\)的计算公式为：
 
 ![](/assets/Cover_Heat_S0_E5.png)
 
-图6  Zth拟合示例
+图6  Zth拟合示例
 
 说了老半天，Zth的动态特性有什么意义呢？不要急，我们慢慢来，在变频器中基波频率是变化的，热阻网络本身又具备一个等效时间常数，所以不同频率下给功率器件造成的热冲击影响也是不一样的，我们看图7，对同一个热阻网络，最左边50Hz的热功率，基本被滤掉，只产生很小的热冲击，而最右边1Hz的热功率全部产生成对应的热冲击。
 
@@ -103,24 +101,22 @@ Zth\(j-c\)的计算公式为：
 
 不管你喜欢，还是不喜欢，你都逃不掉电路的影子！！
 
-
-
 附注：
 
-*        Diode：二极管
-*        Ceramic：烤瓷基板
-*        Base Plate：基板
-*        Themal grease：导热硅脂
-*        Heatsink：热池
-*        Ta：环境温度
-*        Th：热池温度
-*        Tc：基板温度
-*        Tj：结温
-*        Rth\(j-c\)：芯片结到基板的热阻，即junction 到 Base plate 的热阻
-*        Zth\(j-c\)：芯片结到基板的阻抗，即junction 到 Base plate的阻抗
-*        Rth\(c-h\)：基板到热池的热阻，即Base plate 到 heatsink 的热阻，包含导热硅脂和Case与heatsink的接触热阻
-*        Rth\(h-a\)：热池到空气的热阻，即heatsink到 air的热阻
-*        Rth\(c-a\)：IGBT基板到空气的热阻，即Base plate到 air的热阻
+* Diode：二极管
+* Ceramic：烤瓷基板
+* Base Plate：基板
+* Themal grease：导热硅脂
+* Heatsink：热池
+* Ta：环境温度
+* Th：热池温度
+* Tc：基板温度
+* Tj：结温
+* Rth\(j-c\)：芯片结到基板的热阻，即junction 到 Base plate 的热阻
+* Zth\(j-c\)：芯片结到基板的阻抗，即junction 到 Base plate的阻抗
+* Rth\(c-h\)：基板到热池的热阻，即Base plate 到 heatsink 的热阻，包含导热硅脂和Case与heatsink的接触热阻
+* Rth\(h-a\)：热池到空气的热阻，即heatsink到 air的热阻
+* Rth\(c-a\)：IGBT基板到空气的热阻，即Base plate到 air的热阻
 
 
 
