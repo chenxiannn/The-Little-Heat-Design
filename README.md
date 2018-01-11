@@ -15,7 +15,7 @@
 * CH4 动态温升估算与全局热优化
 * CH5 海拔对风道设计分析
 
-如果对小书中有问题，请邮件联系chenxiannn\#126.com
+如果对小书中有问题，请邮件联系chenxiannn\#gmail.com
 
 
 
